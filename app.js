@@ -66,10 +66,6 @@ app.get("/authors/:authorId/books", async function (req, res) {
 	}
 });
 
-//
-// Books
-//
-
 // Creates a new book.
 app.post("/books", async function (req, res) {
 	const book = await Book.create(req.body);
